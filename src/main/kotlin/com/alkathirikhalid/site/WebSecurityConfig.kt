@@ -21,7 +21,7 @@ class WebSecurityConfig {
         http
             .authorizeHttpRequests { requests ->
                 requests
-                    .requestMatchers("/", "/home", "/signup", "/forgot-password")
+                    .requestMatchers("/", "/signup", "/forgot-password")
                     .permitAll()  // Allow signup and forgot-password without authentication
                     .anyRequest().authenticated()  // Require authentication for other requests
             }
@@ -29,9 +29,12 @@ class WebSecurityConfig {
                 form
                     .loginPage("/login") // Custom login page
                     .permitAll()
+                    .defaultSuccessUrl("/dashboard") // Redirect to dashboard after successful login
             }
-            .logout { logout -> logout.permitAll() } // Allow logout without authentication
-
+            .logout { logout ->
+                logout.permitAll() // Allow logout without authentication
+                    .logoutSuccessUrl("/")  // Redirect to root after logout
+            }
 
         return http.build()
     }
