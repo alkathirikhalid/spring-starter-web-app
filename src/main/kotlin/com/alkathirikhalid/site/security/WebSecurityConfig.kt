@@ -1,5 +1,6 @@
-package com.alkathirikhalid.site
+package com.alkathirikhalid.site.security
 
+import com.alkathirikhalid.site.repository.UserService
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.config.annotation.web.builders.HttpSecurity

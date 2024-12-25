@@ -1,4 +1,4 @@
-package com.alkathirikhalid.site
+package com.alkathirikhalid.site.model
 
 import jakarta.persistence.*
 

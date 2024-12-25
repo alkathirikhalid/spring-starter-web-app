@@ -1,5 +1,6 @@
-package com.alkathirikhalid.site
+package com.alkathirikhalid.site.repository
 
+import com.alkathirikhalid.site.model.User
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Service
 import java.util.*

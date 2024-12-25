@@ -1,5 +1,7 @@
-package com.alkathirikhalid.site
+package com.alkathirikhalid.site.controller
 
+import com.alkathirikhalid.site.model.User
+import com.alkathirikhalid.site.repository.UserService
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping

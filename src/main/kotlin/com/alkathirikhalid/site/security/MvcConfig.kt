@@ -1,4 +1,4 @@
-package com.alkathirikhalid.site
+package com.alkathirikhalid.site.security
 
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry
